@@ -1,7 +1,4 @@
-﻿// HidlerTUI.cpp: определяет точку входа для приложения.
-//
-
-#include "HidlerTUI.h"
+#include "nocapTUI.h"
 
 void __stdcall Shellcode(ShellcodeData data)
 {
