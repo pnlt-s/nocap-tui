@@ -242,7 +242,7 @@ int main()
 				vbox({
 					gridbox({
 						{
-							text("HIDLER") | bold,
+							text("NOCAP") | bold,
 							separatorEmpty(),
 							text("TUI") | flex,
 							separator(),
