@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.31)
 
 if (POLICY CMP0141)
   cmake_policy(SET CMP0141 NEW)
@@ -11,19 +11,17 @@ include(FetchContent)
 
 FetchContent_Declare(ftxui
   GIT_REPOSITORY https://github.com/ArthurSonzogni/ftxui
-  GIT_TAG v5.0.0
+  GIT_TAG v6.1.9
 )
 
-FetchContent_GetProperties(ftxui)
-if(NOT ftxui_POPULATED)
-  FetchContent_Populate(ftxui)
-  add_subdirectory(${ftxui_SOURCE_DIR} ${ftxui_BINARY_DIR} EXCLUDE_FROM_ALL)
-endif()
+FetchContent_MakeAvailable(ftxui)
+
+set(CMAKE_BUILD_TYPE "Release")
 
 add_executable (nocapTUI "nocapTUI.cpp" "nocapTUI.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET nocapTUI PROPERTY CXX_STANDARD 20)
+  set_property(TARGET nocapTUI PROPERTY CXX_STANDARD 23)
 endif()
 
 target_link_libraries(nocapTUI
