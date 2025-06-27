@@ -1,8 +1,6 @@
-﻿// HidlerTUI.h : включаемый файл для стандартных системных включаемых файлов
-// или включаемые файлы для конкретного проекта.
+﻿#pragma once
 
-#pragma once
-
+#define NOMINMAX
 #include <Windows.h>
 #include <TlHelp32.h>
 
