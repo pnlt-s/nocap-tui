@@ -1,4 +1,4 @@
-# IT'S ABSOLUTELY IMPERATIVE THAT YOU BUILD THIS IN `Release`. OR ELSE IT WILL CRASH ANY OF THE APPS YOU WANT TO HIDE.
+# BUILD THIS IN `Release` OR ELSE IT WILL CAUSE CRASHES.
 
 # nocap-tui
 a text user interface implementing nocap features.
